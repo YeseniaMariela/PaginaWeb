@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+< html>
+<head>
+	<title>Contacto</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, 					maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./static/css/inicio.css">
+	<link rel="stylesheet" type="text/css" href="./static/css/fontello.css">
+	<link rel="stylesheet" type="text/css" href="./static/css/menu.css">
+	<link rel="stylesheet" type="text/css" href="./static/css/banner.css">
+	<link rel="stylesheet" type="text/css" href="./static/css/blog.css">
+	<link rel="stylesheet" type="text/css" href="./static/css/info.css">
+	<link rel="stylesheet" type="text/css" href="./static/css/formulario.css">
+	<link rel="stylesheet" type="text/css" href="./static/css/ubicacion.css">
+	<link rel="stylesheet" type="text/css" href="./static/css/footer.css">
+	
+</head>
+<body>
+	<header>
+		<div class="contenedor">
+			<a href="./index.html"><img src="static/images/logo.jpg"></a>
+			<input type="checkbox" id="menu-bar" >
+			<label class="icon-menu" for="menu-bar"></label>
+			<nav class="menu">
+				<ul class="nav">
+					<li><a class="icon-home" href="./index.html">Inicio</a></li>
+					<li ><a class="icon-wine" href="">Bebidas</a>
+					   	<ul >
+	                		<li><a href="./BebidasAlcoholicas.html">Alcoholicas</a> </li>
+	                		<li><a href="./BebidasNoAlcoholicas.html">No Alcoholicas</a> </li>
+                		</ul>
+                	</li>
+					<li><a class="icon-mail" href="./Contacto.html">Contacto</a></li>
+					<div>
+			    <input type="search" id="miBusqueda" name="q">
+			    <button>Buscar</button>
+ 			 </div>
+				</ul>
+			
+			</nav>
+		</div>
+	</header>
+	<main>
+		<section id="banner">
+			<img src="static/images/contacto.jpg">
+			<div class="contenedor">
+			<h2>MANTENE EN CONTACTO CON NOTROS</h2>
+			<p>imposible perderse</p>
+			</div>
+		</section>
+		<section id="bienvenidos">
+			<h2>UBICANOS EN LA SIGUIENTE DIRECCION </h2>
+			<div class="ubicacion">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243.8528427523652!2d-75.21199110023302!3d-12.067895540914654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x910e964f6e860d43%3A0xb9b1461ef116fb25!2sArequipa+337%2C+Huancayo+12000!5e0!3m2!1ses-419!2spe!4v1554349814291!5m2!1ses-419!2spe" width="800" height="450" frameborder="3" style="border:2" allowfullscreen></iframe>
+				<p>Jr. Arequipa 337 -Huancayo-a media cuadra de "antojitos restaurant"</p>
+			</div>
+		</section>		
+		<section id="infoC">
+			<h3>COMUNICATE CON NOSOTROS DE DIFERENTES FORMAS </h3>
+			<div class="contenedor">
+				<div class="info-licor">
+					<img src="static/images/whatsapp.png">
+					<h4>WHATSAPP</h4>
+				</div>
+				<div class="info-licor">
+					<img src="static/images/telefono.png">
+					<h4>TELEFONO</h4>
+				</div>
+				<div class="info-licor">
+					<img src="static/images/claro.png">
+					<h4>CELULAR</h4>
+				</div>
+				
+			</div>
+		</section>
+		<section class="info1">
+				<form action="enviar.php" method="post">
+					<h1>ENVIANOS UN MENSAJE PARA PEDIDOS</h1>
+					<input type="text" id="nombre" name="nombre" placeholder="Nombre" required="">
+					<input type="email" id="correo" name="correo" placeholder="Correo" required="">
+					<input type="text" id="telefono" name="telefono" placeholder="Telefono" required="">
+					<textarea name="mensaje" placeholder="Escriba aqui su mensaje"></textarea>
+					<input type="submit" value="ENVIAR" id="boton">
+				</form>			
+		</section>
+		<script type="text/javascript">
+			function validar(){
+	var nombre, correo, telefono, expresion;
+	nombre = document.getElementsById("nombre").value;
+	correo = document.getElementsById("correo").value;
+	telefono = document.getElementsById("telefono").value;
+
+	expresion = /\w+@+\w+\.+[a-z]/;
+	nombre = "juan";
+	document.writeln(nombre);
+	if(nombre ==="" || correo ==="" || telefono ===""  ){
+		alert("complete todos los campos");
+		return false;
+	}
+	 else if(nombre.length>30){
+		alert("use un nombre corto");
+		return false;
+	}
+	  else if(telefono.length>10){
+		alert("use  un numero válido");
+		return false;
+	}
+	 else if (isNaN(telefono)) {
+		alert("ingrese un número válido");
+		return false;
+	}
+	 else if (!expresion.text(correo)) {
+		alert("correo invalido");
+	}
+}
+		</script>
+	</main>
+	<footer>
+		<section class="contenedor">
+			<p class="copy"> ERIEL licoreria &copy; 2019</p>
+			<div class="sociales">
+				<a class="icon-facebook-official" href="https://www.facebook.com/ERIEL-studios-1706397752777084/" target="_blank"></a>
+				<a class="icon-instagram" href="#"></a>
+				<a class="icon-youtube-squared" href="https://www.youtube.com/channel/UCgZxuePF8Vx2JQW3ADjmeKw" target="_blank"></a>
+				<a class="icon-whatsapp" href="./contacto.html"></a>
+			</div>			
+		</section>
+		<script type="text/javascript">
+			/*nombre = "juan";
+	document.writeln(nombre);
+		</script>
+	</footer>
+
+	<script src="./static/js/formulario.js" ></script>
+</body>
+</html>

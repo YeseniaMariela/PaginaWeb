@@ -1,0 +1,39 @@
+
+#bienvenidos{
+	background: rgba(51,51,51,0.7);
+
+}
+h2{
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+#bienvenidos.ubicacion{
+	display: block;
+	justify-content: center;
+
+}
+#bienvenidos .ubicacion p{
+	padding-bottom: 20px;
+	font-size: 30px;
+	text-align: center;
+}
+@media(max-width: 480px){
+	#bienvenidos{
+		background: none;
+	}
+	#bienvenidos .ubicacion iframe{
+		width: 300px;
+		height: 300px;
+		
+	}
+	h2{
+	padding-bottom: 20px;
+	padding-top: 10px;
+	font-size: 20px
+	}
+	#bienvenidos .ubicacion p{
+	padding-bottom: 20px;
+	font-size: 20px;
+	text-align: center;
+	}
+}

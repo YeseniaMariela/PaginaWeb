@@ -1,0 +1,47 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header{
+	width: 100%;
+	height: 50px;
+	background: black;
+	color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+.contenedor{
+	width: 98%;
+	margin: auto;
+
+}
+.contenedor img{
+	max-width: 50px;
+	max-height: 50px;
+	float: right;
+
+
+}
+header .contenedor{
+	display: table;
+}
+section{
+	width: 100%;
+	margin-bottom:25px; 
+}
+
+#bienvenidos{
+	text-align: center;
+	
+}
+#bienvenidos p{
+	text-align:justify;
+	margin-right:20px;
+	margin-left: 20px;
+	font-size: 15px;
+}
